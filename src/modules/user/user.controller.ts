@@ -7,7 +7,7 @@ import {
   Post,
   Headers,
 } from '@nestjs/common';
-import { EntityRepository, EntityManager } from '@mikro-orm/mysql';
+import { EntityRepository, EntityManager } from '@mikro-orm/mongodb';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { User } from '../../entities';
 import admin from '../../firebase.config'; // Import Firebase Admin without namespace
