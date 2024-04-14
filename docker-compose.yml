@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: unless-stopped
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb:/data/db
+  
+volumes:
+  mongodb:
